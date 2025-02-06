@@ -8,3 +8,19 @@ p {
   margin-top: 0;
 }
 
+.carrossel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.carrossel-image {
+  object-fit: cover;
+  width: 1500px;
+  height: 500px;
+}
+
+.about-box {
+  background-color: white;
+  display: flex;
+}
