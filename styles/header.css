@@ -14,10 +14,12 @@
   padding-top: 5px;
   padding-right: 50px;
   z-index: 200;
+
 }
 
 nav.hide{
   transform: translateY(-100%);
+  transition: 1s transform ;
 }
 
 .my-logo {
