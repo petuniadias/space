@@ -6,3 +6,8 @@ body {
   padding-right: 200px;
 
 }
+
+.horizontal-line {
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
