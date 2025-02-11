@@ -72,6 +72,9 @@
 .project-box:hover {
   cursor: pointer;
   opacity: 0.8;
+  transform: translate(7px, 2px);
+
+
 }
 
 .project-box:active {
@@ -84,6 +87,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.15s transform,
+  0.15s opacity;
 }
 
 .overlay {
