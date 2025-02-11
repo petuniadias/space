@@ -13,6 +13,7 @@
   padding-left: 50px;
   padding-top: 5px;
   padding-right: 50px;
+  z-index: 200;
 }
 
 .my-logo {
@@ -27,7 +28,6 @@
   align-items: center;
   cursor: pointer;
   position: relative;
-  white-space: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -46,6 +46,7 @@
   opacity: 0;
   display: flex;
   transition: opacity 0.15s;
+  white-space: nowrap;
 }
 
 .left-side:hover .tooltip {

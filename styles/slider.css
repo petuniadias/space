@@ -1,0 +1,48 @@
+.slider {
+  width: 100%;
+  height: var(--height);
+  margin-bottom: 50px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(0, 0, 0) 10% 90%,
+    transparent
+  );
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 15s linear infinite;
+  animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1));
+  cursor: pointer;
+}
+
+.slider .list .item .image {
+  width: var(--width);
+  height: var(--height);
+  background-color: rgb(255, 171, 226);
+  object-fit: cover;
+}
+
+@keyframes autoRun {
+  from{
+    left: 100%;
+  }to{
+    left: calc(var(--width) * -1);
+  }
+}
+
+.slider:hover .item{
+  animation-play-state: paused!important;
+}
