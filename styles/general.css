@@ -12,3 +12,9 @@ body {
   opacity: 0.5;
   margin-bottom: 30px;
 }
+
+.image {
+  width: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}

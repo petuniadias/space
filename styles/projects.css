@@ -79,6 +79,9 @@
 
 .folder-content {
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .close-symbol {

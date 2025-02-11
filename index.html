@@ -83,41 +83,26 @@
       </div>
     </div>
 
-    <script>
-        function openMessage() {
-          let displayValue = document.getElementById('overlay');
-          if (displayValue.style.display === "none") {
-            displayValue.style.display = "flex";
-          } else {
-            displayValue.style.display = "none";
-          }
-        }
-
-        function closeMessage() {
-          let displayValue = document.getElementById('overlay');
-          if (displayValue.style.display === "flex") {
-            displayValue.style.display = "none";
-          } else {
-            displayValue.style.display = "flex";
-          }
-        }
-    </script>
     <div class="project-grid">
       <div class="project-box" onclick="
-        openMessage();
+        openMessage('pageStats');
       ">
         <img class="folder" src="images/folder.png">
         <p class="folder-name">
           page-stats
         </p>
       </div>
-      <div class="project-box">
+      <div class="project-box" onclick="
+        openMessage('welcomeMessage');
+      ">
         <img class="folder" src="images/folder.png">
         <p class="folder-name">
           welcome-message
         </p>
       </div>
-      <div class="project-box">
+      <div class="project-box" onclick="
+        openMessage('carouselSlider');
+      ">
         <img class="folder" src="images/folder.png">
         <p class="folder-name">
           carousel-slider
@@ -126,7 +111,31 @@
     </div>
     
     <!-- ONCLICK TAB // IN CONSTRUCTION -->
-    <div class="overlay" id="overlay">
+    <div class="overlay" id="pageStats">
+      <div class="folder-content-box">
+        <div class="top-side">
+
+          <div class="folder-content-title">
+            Here's Our Page Stats
+          </div>
+
+          <div class="close" onclick="
+          closeMessage();
+          ">
+            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+        </div>
+
+        <div class="folder-content">
+          <img class="image" src="images/pageStats.gif">
+          <div class="text">
+            THIS IS STILL IN CONSTRUCTION
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="welcomeMessage">
       <div class="folder-content-box">
         <div class="top-side">
 
@@ -146,5 +155,56 @@
         </div>
       </div>
     </div>
+
+    <div class="overlay" id="carouselSlider">
+      <div class="folder-content-box">
+        <div class="top-side">
+
+          <div class="folder-content-title">
+            Hello visitor!
+          </div>
+
+          <div class="close" onclick="
+          closeMessage();
+          ">
+            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+        </div>
+
+        <div class="folder-content">
+          Welcome to my web-site!
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openMessage(element) {
+        let displayValue = document.getElementById(element);
+        if (displayValue.style.display === "none") {
+          displayValue.style.display = "flex";
+        } else {
+          displayValue.style.display = "none";
+        }
+      }
+
+      /* CLOSE BUTTON FOR NOW */
+
+      function closeMessage() {
+        let displayValue = document.getElementById('pageStats');
+        let displayValue1 = document.getElementById('welcomeMessage');
+        let displayValue2 = document.getElementById('carouselSlider');
+
+        if (displayValue.style.display === "flex") {
+          displayValue.style.display = "none";
+        } else if (displayValue1.style.display === "flex") {
+          displayValue1.style.display = "none";
+        } else if (displayValue2.style.display === "flex") {
+          displayValue2.style.display = "none";
+        } else {
+          displayValue2.style.display = "flex";
+        }
+      }
+  </script>
+
   </body>
 </html>
