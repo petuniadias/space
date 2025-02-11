@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/slider.css">
   </head>
   <body>
-    <div class="header">
+    <nav class="header">
       <div class="left-side">
         <img class="profile-picture" src="images/pfp.jpg">
 
@@ -29,7 +29,7 @@
         </a>
 
       </div>
-    </div>
+    </nav>
 
     <div>
       <p class="main-title">
@@ -38,14 +38,9 @@
       <p class="description">
         I'm Petúnia. This is my very first web-page :D
         <br>
-        <br>
         This is where I do my experiments with code.
-        <br>
-        <br>
-        For more contents check the folders below.
-        <br>
-        <br>
-        <img class="image" src="images/penguin.gif">
+        For more content check the folders below.
+
         <hr class="horizontal-line">
       </p>
     </div>
@@ -83,10 +78,10 @@
       </div>
     </div>
 
+    <div class="section-title">
+      FOLDERS
+    </div>
     <section class="folders-section">
-      <div class="section-title">
-        FOLDERS
-      </div>
       <div class="project-grid">
         <div class="project-box" onclick="
           openMessage('pageStats');
@@ -199,7 +194,11 @@
           </div>
   
           <div class="folder-content">
-            Welcome to my web-site!
+            <img class="image" src="images/penguin.gif">
+            
+            <div class="text">
+              Welcome to my web-site!
+            </div>
           </div>
         </div>
       </div>
@@ -256,7 +255,24 @@
         } else {
           displayValue2.style.display = "flex";
         }
+
       }
+
+      
+      const nav = document.querySelector('nav');
+      let prevScrollPos = window.pageYOffset;
+
+      window.addEventListener('scroll', ()=>{
+        let currentScrollPos = window.pageYOffset;
+        if(prevScrollPos < currentScrollPos){
+          nav.classList.add("hide");
+        } else {
+          nav.classList.remove("hide");
+        }
+
+        prevScrollPos = currentScrollPos;
+      })
+
   </script>
 
   </body>

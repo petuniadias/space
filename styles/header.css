@@ -16,6 +16,10 @@
   z-index: 200;
 }
 
+nav.hide{
+  transform: translateY(-100%);
+}
+
 .my-logo {
   color: white;
   margin: 0;
