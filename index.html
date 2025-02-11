@@ -82,9 +82,30 @@
         </div>
       </div>
     </div>
-    
+
+    <script>
+        function openMessage() {
+          let displayValue = document.getElementById('overlay');
+          if (displayValue.style.display === "none") {
+            displayValue.style.display = "flex";
+          } else {
+            displayValue.style.display = "none";
+          }
+        }
+
+        function closeMessage() {
+          let displayValue = document.getElementById('overlay');
+          if (displayValue.style.display === "flex") {
+            displayValue.style.display = "none";
+          } else {
+            displayValue.style.display = "flex";
+          }
+        }
+    </script>
     <div class="project-grid">
-      <div class="project-box">
+      <div class="project-box" onclick="
+        openMessage();
+      ">
         <img class="folder" src="images/folder.png">
         <p class="folder-name">
           page-stats
@@ -96,10 +117,16 @@
           welcome-message
         </p>
       </div>
+      <div class="project-box">
+        <img class="folder" src="images/folder.png">
+        <p class="folder-name">
+          carousel-slider
+        </p>
+      </div>
     </div>
     
-    <!-- ONCLICK TAB // IN CONSTRUCTION
-    <div class="overlay">
+    <!-- ONCLICK TAB // IN CONSTRUCTION -->
+    <div class="overlay" id="overlay">
       <div class="folder-content-box">
         <div class="top-side">
 
@@ -107,7 +134,9 @@
             Hello visitor!
           </div>
 
-          <div class="close">
+          <div class="close" onclick="
+          closeMessage();
+          ">
             <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
           </div>
         </div>
@@ -117,6 +146,5 @@
         </div>
       </div>
     </div>
-    -->
   </body>
 </html>
