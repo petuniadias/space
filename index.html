@@ -45,7 +45,7 @@
         For more contents check the folders below.
         <br>
         <br>
-        //IN CONSTRUCTION//
+        <img class="image" src="images/penguin.gif">
         <hr class="horizontal-line">
       </p>
     </div>
@@ -83,99 +83,152 @@
       </div>
     </div>
 
-    <div class="project-grid">
-      <div class="project-box" onclick="
+    <section class="folders-section">
+      <div class="section-title">
+        FOLDERS
+      </div>
+      <div class="project-grid">
+        <div class="project-box" onclick="
+          openMessage('pageStats');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            page-stats
+          </p>
+        </div>
+        <div class="project-box" onclick="
+          openMessage('welcomeMessage');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            welcome-message
+          </p>
+        </div>
+        <div class="project-box" onclick="
+          openMessage('carouselSlider');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            carousel-slider
+          </p>
+        </div>
+        <div class="project-box" onclick="
         openMessage('pageStats');
-      ">
-        <img class="folder" src="images/folder.png">
-        <p class="folder-name">
-          page-stats
-        </p>
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            filler-folder
+          </p>
+        </div>
+
+        <div class="project-box" onclick="
+        openMessage('pageStats');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            filler-folder
+          </p>
+        </div>
+
+        <div class="project-box" onclick="
+        openMessage('pageStats');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            filler-folder
+          </p>
+        </div>
+
+        <div class="project-box" onclick="
+        openMessage('pageStats');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            filler-folder
+          </p>
+        </div>
+        
+        <div class="project-box" onclick="
+        openMessage('pageStats');
+        ">
+          <img class="folder" src="images/folder.png">
+          <p class="folder-name">
+            filler-folder
+          </p>
+        </div>
       </div>
-      <div class="project-box" onclick="
-        openMessage('welcomeMessage');
-      ">
-        <img class="folder" src="images/folder.png">
-        <p class="folder-name">
-          welcome-message
-        </p>
+      
+      <!-- ONCLICK TAB // IN CONSTRUCTION -->
+      <div class="overlay" id="pageStats">
+        <div class="folder-content-box">
+          <div class="top-side">
+  
+            <div class="folder-content-title">
+              Here's Our Page Stats
+            </div>
+  
+            <div class="close" onclick="
+            closeMessage();
+            ">
+              <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
+          </div>
+  
+          <div class="folder-content">
+            <img class="image" src="images/pageStats.gif">
+            <div class="text">
+              THIS PAGE IS STILL IN CONSTRUCTION
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project-box" onclick="
-        openMessage('carouselSlider');
-      ">
-        <img class="folder" src="images/folder.png">
-        <p class="folder-name">
-          carousel-slider
-        </p>
+  
+      <div class="overlay" id="welcomeMessage">
+        <div class="folder-content-box">
+          <div class="top-side">
+  
+            <div class="folder-content-title">
+              Hello visitor!
+            </div>
+  
+            <div class="close" onclick="
+            closeMessage();
+            ">
+              <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
+          </div>
+  
+          <div class="folder-content">
+            Welcome to my web-site!
+          </div>
+        </div>
       </div>
-    </div>
+  
+      <div class="overlay" id="carouselSlider">
+        <div class="folder-content-box">
+          <div class="top-side">
+  
+            <div class="folder-content-title">
+              Carousel using HTML, CSS and Javascript
+            </div>
+  
+            <div class="close" onclick="
+            closeMessage();
+            ">
+              <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
+          </div>
+  
+          <div class="folder-content">
+            <img class="image" src="images/pageStats.gif">
+            <div class="text">
+              TO DO
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
-    <!-- ONCLICK TAB // IN CONSTRUCTION -->
-    <div class="overlay" id="pageStats">
-      <div class="folder-content-box">
-        <div class="top-side">
-
-          <div class="folder-content-title">
-            Here's Our Page Stats
-          </div>
-
-          <div class="close" onclick="
-          closeMessage();
-          ">
-            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
-          </div>
-        </div>
-
-        <div class="folder-content">
-          <img class="image" src="images/pageStats.gif">
-          <div class="text">
-            THIS IS STILL IN CONSTRUCTION
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="overlay" id="welcomeMessage">
-      <div class="folder-content-box">
-        <div class="top-side">
-
-          <div class="folder-content-title">
-            Hello visitor!
-          </div>
-
-          <div class="close" onclick="
-          closeMessage();
-          ">
-            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
-          </div>
-        </div>
-
-        <div class="folder-content">
-          Welcome to my web-site!
-        </div>
-      </div>
-    </div>
-
-    <div class="overlay" id="carouselSlider">
-      <div class="folder-content-box">
-        <div class="top-side">
-
-          <div class="folder-content-title">
-            Hello visitor!
-          </div>
-
-          <div class="close" onclick="
-          closeMessage();
-          ">
-            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
-          </div>
-        </div>
-
-        <div class="folder-content">
-          Welcome to my web-site!
-        </div>
-      </div>
-    </div>
 
     <script>
       function openMessage(element) {
