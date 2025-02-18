@@ -1,0 +1,26 @@
+.temporary-container {
+ padding: 50px 0px;
+}
+
+.projects-title {
+  color: white;
+  font-size: 33px;
+  margin: none;
+  font-family: Roboto;
+}
+
+.projects-file {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(255, 0, 162);
+  display: block;
+  padding: 10px 20px;
+}
+
+.projects-file:hover {
+  opacity: 0.8;
+}
+
+.projects-file:active {
+  opacity: 0.5;
+}
