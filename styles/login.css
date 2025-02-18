@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  padding: 10px 20px;
+  border: radius;
+  width: 250px;
+}
+
+.register-link {
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

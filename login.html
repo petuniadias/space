@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/login.css"
+</head>
+<body>
+  <form class="login-section js-login-section">
+    <h1>Login</h1>
+    <input autocomplete="current-password" class="js-input-username" type="text" placeholder="username" required>
+    <input autocomplete="current-password" class="js-input-pass" type="password" placeholder="password" required>
+    <button class="login-btn js-login-btn">Log-in</button>
+    <p>Don't have an account? <a href="register.html" class="register-link">Register</a>.</p>
+  </form>
+
+  <form class="login-section js-login-section">
+    <h1>Register</h1>
+    <input autocomplete="current-password" class="js-register-username" type="text" placeholder="username">
+    <input autocomplete="current-password" class="js-register-password" type="password" placeholder="password">
+    <button class="login-btn js-register-btn">Register</button>
+    <p>You already have an account? <a href="login.html" class="register-link">Login</a>.</p>
+  </form>
+
+
+  <script src="assets/scripts/login-register.js">
+  </script>
+</body>
+</html>

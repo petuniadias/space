@@ -110,7 +110,7 @@
         ">
           <img class="folder" src="images/folder.png">
           <p class="folder-name">
-            carousel-slider
+            login-and-register
           </p>
         </div>
         <div class="project-box" onclick="
@@ -214,7 +214,7 @@
           <div class="top-side">
   
             <div class="folder-content-title">
-              Carousel using HTML, CSS and Javascript
+              Log In and Register
             </div>
   
             <div class="close" onclick="
@@ -227,59 +227,16 @@
           <div class="folder-content">
             <img class="image" src="images/pageStats.gif">
             <div class="text">
-              TO DO
+              Here's a Log In and register page I made. It works! (I guess...)
             </div>
           </div>
+          <a class="go-to-btn" href="login.html">Go to page</a>
         </div>
       </div>
     </section>
     
 
-    <script>
-      function openMessage(element) {
-        let displayValue = document.getElementById(element);
-        if (displayValue.style.display === "none") {
-          displayValue.style.display = "flex";
-        } else {
-          displayValue.style.display = "none";
-        }
-      }
-
-      /* CLOSE BUTTON FOR NOW */
-
-      function closeMessage() {
-        let displayValue = document.getElementById('pageStats');
-        let displayValue1 = document.getElementById('welcomeMessage');
-        let displayValue2 = document.getElementById('carouselSlider');
-
-        if (displayValue.style.display === "flex") {
-          displayValue.style.display = "none";
-        } else if (displayValue1.style.display === "flex") {
-          displayValue1.style.display = "none";
-        } else if (displayValue2.style.display === "flex") {
-          displayValue2.style.display = "none";
-        } else {
-          displayValue2.style.display = "flex";
-        }
-
-      }
-
-      
-      const nav = document.querySelector('nav');
-      let prevScrollPos = window.pageYOffset;
-
-      window.addEventListener('scroll', ()=>{
-        let currentScrollPos = window.pageYOffset;
-        if(prevScrollPos < currentScrollPos){
-          nav.classList.add("hide");
-        } else {
-          nav.classList.remove("hide");
-        }
-
-        prevScrollPos = currentScrollPos;
-      })
-
-  </script>
+    <script src="assets/scripts/projects.js"></script>
 
   </body>
 </html>

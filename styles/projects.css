@@ -123,6 +123,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .close-symbol {
@@ -149,4 +150,15 @@
   width: 200px;
   object-fit: cover;
   margin-bottom: 20px;
+}
+
+.go-to-btn {
+  background-color: rgb(222, 32, 162);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
 }
