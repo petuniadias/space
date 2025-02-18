@@ -1,3 +1,7 @@
+body {
+  font-family: Roboto, Arial;
+}
+
 .main-title,
 .description {
   color: white;
@@ -14,20 +18,6 @@
 .description {
   margin-bottom: 40px;
   color: rgb(180, 180, 180);
-}
-
-.folders-section {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(
-    to bottom right,
-     rgb(224, 133, 22), 
-     rgb(217, 85, 164)
-    );
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-    border-radius: 5px;
-    overflow-y: scroll;
-    height: 350px;
 }
 
 .project-grid {
@@ -63,7 +53,7 @@
 }
 
 .folder-name {
-  color: white;
+  color: rgb(0, 0, 0);
   width: 100px;
   text-align: center;
   margin: 0;

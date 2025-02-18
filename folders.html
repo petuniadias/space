@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folders Pop-up</title>
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="icon" href="images/icons8-pixel-cat-24.png" type="image/png">
+</head>
+<body>
+
+  <section class="folders-section">
+    <div class="project-grid">
+      <div class="project-box js-project-box" onclick="
+        openMessage('pageStats');
+      ">
+        <img class="folder" src="images/folder.png">
+        <p class="folder-name">
+          page-stats
+        </p>
+      </div>
+    
+    <!-- ONCLICK TAB // IN CONSTRUCTION -->
+    <div class="overlay js-overlay">
+      <div class="folder-content-box">
+        <div class="top-side">
+
+          <div class="folder-content-title">
+            Here's Our Page Stats
+          </div>
+
+          <div class="close js-close">
+            <img class="close-symbol" src="icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+          </div>
+        </div>
+
+        <div class="folder-content">
+          <img class="image" src="images/pageStats.gif">
+          <div class="text">
+            THIS PAGE IS STILL IN CONSTRUCTION
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assets/scripts/projects.js"></script>
+</body>
+</html>
