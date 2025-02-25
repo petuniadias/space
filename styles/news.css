@@ -41,31 +41,31 @@ body {
   right: 0;
   bottom: 0;
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  height: 200px;
+  height: 270px;
   border-radius: 10px;
 }
 
-.news-content {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  padding: 15px;
-  padding-top: 20px;
+.news-title, .news-description {
+  padding: 20px;
 }
 
 .news-title {
+  bottom: calc(50% / 2);
   font-size: 20px;
   font-weight: 600;
   color: white;
+  position: absolute;
 }
 
 .news-box:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1);
 }
 
-.news-content-preview {
+.news-description {
   color: white;
   position: absolute;
+  bottom: 0;
+  display: block;
 }
 
 .news-button {
@@ -77,7 +77,6 @@ body {
   border-radius: 100%;
   padding: 10px 10px 5px 10px;
   cursor: pointer;
-
 }
 
 .news-button > img {
