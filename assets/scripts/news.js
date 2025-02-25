@@ -10,6 +10,7 @@ function displayDescription() {
     box.addEventListener('mouseleave', () => {
       newsDescription.style.display = 'none';
       newsTitle.style.bottom = '0px';
+      
     });
   });
 }
