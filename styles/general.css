@@ -6,6 +6,7 @@ body {
   padding-right: 200px;
   height: 1300px;
 
+  cursor: url('../assets/cursor/Normal Select.cur'), auto;
 }
 
 .horizontal-line {
