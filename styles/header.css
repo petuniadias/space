@@ -32,7 +32,6 @@ nav.hide{
   display: flex;
   flex-direction: row;
   align-items: center;
-  cursor: pointer;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -74,5 +73,4 @@ nav.hide{
 .my-github {
   width: 20px;
   height: 20px;
-  cursor: pointer;
 }

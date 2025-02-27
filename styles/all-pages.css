@@ -1,0 +1,5 @@
+body {
+  font-family: Poppins, Arial;
+  background-color: rgb(9, 9, 21);
+  cursor: url('../assets/cursor/Normal Select.cur'), auto;
+}
