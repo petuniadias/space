@@ -49,6 +49,7 @@
 
 .projects-tag:hover {
   background-color: rgb(201, 0, 127);
+  transform: scale(0.9);
 }
 
 .tags-title {
