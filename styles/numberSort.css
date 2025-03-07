@@ -1,0 +1,52 @@
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.image-box img {
+  width: 300px;
+  object-fit: cover;
+  height: 300px;
+}
+
+.image-box {
+  display: block;
+}
+
+.number-sort {
+  border: none;
+  padding: 10px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.number-sort:hover {
+  background-color: orange;
+}
+
+.button-arrow img {
+  width:100%;
+  height: 100%;
+}
+
+.button-arrow {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.button-arrow:hover {
+  opacity: 0.8;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
