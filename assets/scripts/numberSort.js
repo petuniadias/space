@@ -10,22 +10,23 @@ for (let i = 1; i <= totalPages; i++) {
   const createdBtn = pageBtn.length;
   pageBtn.classList.add('number-sort');
   pageBtn.textContent = i;
+
+
   btnContainer.appendChild(pageBtn);
+
+
   pageBtn.addEventListener('click', () => {
     showPage(i);
   });
 
-  if(i > 3) {
-    arrowLeft.style.display = 'none';
 
-  }
 }
 
 showPage(1);
 
 function showPage(pageNumber) {
   imageBox.forEach((image, index) => {
-
+    currentPage = pageNumber;
     /* Como isto funciona:
         Quando o usuário clica no primeiro botão (x = 1), vê o indice mínimo => (x - 1) * 6 = 0 <= indice da 1ª imagem
         e o indice máximo => x * 6 = 6 <= o index tem de ser menor que 6 então o indice é 5
@@ -52,4 +53,37 @@ function showPage(pageNumber) {
 
 const arrowLeft = document.querySelector('.js-arrow-left');
 const arrowRight = document.querySelector('.js-arrow-right');
+
+arrowLeft.addEventListener('click', () => {
+  if (currentPage > 1) {
+    showPage(currentPage - 1);
+  }
+  updateButtons();
+
+
+
+});
+
+arrowRight.addEventListener('click', () => {
+  if (currentPage < totalPages) {
+    showPage(currentPage + 1);
+  }
+  updateButtons();
+});
+
+function updateButtons() {
+  if (currentPage === 1) {
+    arrowLeft.style.display = 'none';
+  } else {
+    arrowLeft.style.display = 'block';
+  }
+
+  if (currentPage === totalPages) {
+    arrowRight.style.display = 'none';
+  } else {
+    arrowRight.style.display = 'block';
+  }
+
+}
+
 
