@@ -48,7 +48,7 @@ function showPage(pageNumber) {
   PÔR SÓ ESTA SETA '>' QUANDO ESTÁ NO INICIO
   QUANDO ESTÁ NO MEIO, AS DUAS '<' '>' E 5 NÚMEROS
   E QUANDO ACABA SÓ UM '<', TAMBÉM.
-
+  
 */
 
 const arrowLeft = document.querySelector('.js-arrow-left');
